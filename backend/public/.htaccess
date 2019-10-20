@@ -1,0 +1,6 @@
+Allow from all
+
+RewriteEngine On
+RewriteBase /alerts/public
+RewriteCond %{4} !-f
+RewriteRule ^ index.php [QSA,L]
